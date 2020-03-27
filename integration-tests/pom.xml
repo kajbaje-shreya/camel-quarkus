@@ -81,7 +81,7 @@
         <module>graphql</module>
         <module>http</module>
         <module>hystrix</module>
-        <module>infinispan</module>
+        <!--module>infinispan</module-->
         <module>jaxb</module>
         <module>jdbc</module>
         <module>jira</module>
@@ -90,7 +90,7 @@
         <module>mail</module>
         <module>messaging</module>
         <module>microprofile</module>
-        <module>mongodb</module>
+        <!--module>mongodb</module-->
         <module>mustache</module>
         <module>netty</module>
         <module>olingo4</module>
@@ -99,7 +99,7 @@
         <module>platform-http</module>
         <module>platform-http-engine</module>
         <module>quartz</module>
-        <module>qute</module>
+        <!--module>qute</module-->
         <module>reactive-streams</module>
         <module>ref</module>
         <module>salesforce</module>
