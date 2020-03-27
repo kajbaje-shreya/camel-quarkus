@@ -22,8 +22,8 @@
 
     <parent>
         <groupId>org.apache.camel.quarkus</groupId>
-        <artifactId>camel-quarkus</artifactId>
-        <version>1.1.0-SNAPSHOT</version>
+        <artifactId>camel-quarkus-parent</artifactId>
+        <version>1.0.0-M6-SNAPSHOT</version>
     </parent>
 
     <artifactId>camel-quarkus-tooling</artifactId>

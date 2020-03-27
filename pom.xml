@@ -27,8 +27,8 @@
     </parent>
 
     <groupId>org.apache.camel.quarkus</groupId>
-    <artifactId>camel-quarkus</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <artifactId>camel-quarkus-parent</artifactId>
+    <version>1.0.0-M6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Camel Quarkus</name>
@@ -60,7 +60,7 @@
         <jetty.version>9.4.18.v20190429</jetty.version>
         <kotlin.version>1.3.61</kotlin.version>
         <quarkus.version>1.3.1.Final</quarkus.version>
-        <quarkus-qpid-jms.version>0.13.1</quarkus-qpid-jms.version>
+        <quarkus-qpid-jms.version>0.11.3</quarkus-qpid-jms.version>
         <protobuf.version>3.11.1</protobuf.version>
         <retrofit.version>2.5.0</retrofit.version>
         <!-- Keep spring.version aligned with the version used by Camel -->
@@ -404,38 +404,6 @@
     </build>
 
     <profiles>
-        <profile>
-            <id>apache-release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-assembly-plugin</artifactId>
-                        <version>${maven-assembly-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>source-release-assembly</id>
-                                <phase /><!-- fix https://github.com/apache/camel-quarkus/issues/844 -->
-                            </execution>
-                            <execution>
-                                <id>camel-quarkus-source-release-assembly</id>
-                                <phase>package</phase>
-                                <inherited>false</inherited>
-                                <goals>
-                                    <goal>single</goal>
-                                </goals>
-                                <configuration>
-                                    <descriptors>
-                                        <descriptor>tooling/descriptors/src.xml</descriptor>
-                                    </descriptors>
-                                    <tarLongFileMode>gnu</tarLongFileMode>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
         <profile>
             <!-- To disable sanity checks while building: add '-Denforce=false' to the command line -->
             <id>enforce</id>
