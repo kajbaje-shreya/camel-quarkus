@@ -79,7 +79,7 @@
         <module>http</module>
         <module>hystrix</module>
         <module>ical</module>
-        <module>infinispan</module>
+        <!--module>infinispan</module-->
         <module>jackson</module>
         <module>jacksonxml</module>
         <module>jaxb</module>
@@ -95,7 +95,7 @@
         <module>mail</module>
         <module>microprofile-health</module>
         <module>microprofile-metrics</module>
-        <module>mongodb</module>
+        <!--module>mongodb</module-->
         <module>mustache</module>
         <module>netty</module>
         <module>netty-http</module>
@@ -105,7 +105,7 @@
         <module>pdf</module>
         <module>platform-http</module>
         <module>quartz</module>
-        <module>qute</module>
+        <!--module>qute</module-->
         <module>reactive-streams</module>
         <module>ref</module>
         <module>rest</module>
