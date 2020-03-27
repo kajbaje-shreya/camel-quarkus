@@ -63,7 +63,7 @@
         <module>groovy</module>
         <module>grpc</module>
         <module>influxdb</module>
-        <module>kubernetes</module>
+        <!--module>kubernetes</module-->
         <module>kudu</module>
         <module>mongodb-gridfs</module>
         <module>nitrite</module>
