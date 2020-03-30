@@ -462,11 +462,13 @@
                 <artifactId>camel-quarkus-ical-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-infinispan-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-influxdb-deployment</artifactId>
@@ -517,11 +519,13 @@
                 <artifactId>camel-quarkus-kotlin-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-kubernetes-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-kudu-deployment</artifactId>
@@ -552,11 +556,13 @@
                 <artifactId>camel-quarkus-microprofile-metrics-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-mongodb-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-mongodb-gridfs-deployment</artifactId>
@@ -632,11 +638,13 @@
                 <artifactId>camel-quarkus-quartz-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-qute-deployment</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-rabbitmq-deployment</artifactId>
