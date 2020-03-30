@@ -94,6 +94,7 @@
                 <artifactId>camel-ahc-ws</artifactId>
                 <version>${camel.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-amqp</artifactId>
@@ -117,6 +118,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-api</artifactId>
@@ -1047,11 +1049,13 @@
                 <artifactId>camel-quarkus-ahc-ws</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-amqp</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-attachments</artifactId>
