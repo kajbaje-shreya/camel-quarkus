@@ -548,6 +548,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-infinispan</artifactId>
@@ -559,6 +560,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-influxdb</artifactId>
@@ -637,6 +639,7 @@
                 <artifactId>camel-kafka</artifactId>
                 <version>${camel.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-kubernetes</artifactId>
@@ -648,6 +651,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-kudu</artifactId>
@@ -700,6 +704,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-mongodb</artifactId>
@@ -711,6 +716,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-mongodb-gridfs</artifactId>
@@ -1421,11 +1427,13 @@
                 <artifactId>camel-quarkus-ical</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-infinispan</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-influxdb</artifactId>
@@ -1481,11 +1489,13 @@
                 <artifactId>camel-quarkus-kotlin</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-kubernetes</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-kudu</artifactId>
@@ -1516,11 +1526,13 @@
                 <artifactId>camel-quarkus-microprofile-metrics</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-mongodb</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-mongodb-gridfs</artifactId>
@@ -1596,6 +1608,7 @@
                 <artifactId>camel-quarkus-quartz</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-qute</artifactId>
@@ -1606,6 +1619,7 @@
                 <artifactId>camel-quarkus-qute-component</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-rabbitmq</artifactId>
