@@ -427,6 +427,8 @@
                                     <goal>enforce</goal>
                                 </goals>
                                 <configuration>
+                                    <!-- Temporally disabled due to quarkus-junit5 dependency tree pulling in Quarkus community artifacts -->
+                                    <skip>true</skip>
                                     <requireMavenVersion>
                                         <version>3.6.2</version>
                                     </requireMavenVersion>
