@@ -28,7 +28,7 @@
 
     <groupId>org.apache.camel.quarkus</groupId>
     <artifactId>camel-quarkus</artifactId>
-    <version>1.0.0-CR3</version>
+    <version>1.0.0.CR2.fuse-jdk11-800015</version>
     <packaging>pom</packaging>
 
     <name>Camel Quarkus</name>
@@ -46,7 +46,7 @@
         <awssdk1.version>1.11.714</awssdk1.version>
         <awssdk1-swf-libs.version>1.11.22</awssdk1-swf-libs.version>
         <awssdk2.version>2.13.33</awssdk2.version>
-        <camel.version>3.4.0</camel.version>
+        <camel.version>3.4.0.fuse-jdk11-800007</camel.version>
         <debezium.version>1.2.0.Final</debezium.version>
         <elasticsearch.version>7.6.1</elasticsearch.version>
         <freemarker.version>2.3.30</freemarker.version>
