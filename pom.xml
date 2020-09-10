@@ -28,7 +28,7 @@
 
     <groupId>org.apache.camel.quarkus</groupId>
     <artifactId>camel-quarkus</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.0.fuse-jdk11-800028</version>
     <packaging>pom</packaging>
 
     <name>Camel Quarkus</name>
@@ -47,7 +47,7 @@
         <awssdk1-swf-libs.version>1.11.22</awssdk1-swf-libs.version>
         <awssdk2.version>2.14.3</awssdk2.version>
         <bouncycastle.version>1.66</bouncycastle.version>
-        <camel.version>3.5.0</camel.version>
+        <camel.version>3.5.1.fuse-jdk11-800001</camel.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version><!-- keep in sync with Camel -->
         <commons-cli.version>1.4</commons-cli.version><!-- keep in sync with Quarkus, via quarkus-bootstrap-core -->
         <debezium.version>1.2.1.Final</debezium.version>
@@ -74,7 +74,7 @@
         <nimbus-jose-jwt.version>4.41.1</nimbus-jose-jwt.version><!-- Mess in hdfs transitive deps -->
         <okhttp.version>3.14.6</okhttp.version><!-- keep in sync with okio -->
         <okio.version>1.17.2</okio.version><!-- keep in sync with okhttp -->
-        <quarkus.version>1.7.3.Final</quarkus.version>
+        <quarkus.version>1.7.1.Final</quarkus.version>
         <quarkus-qpid-jms.version>0.17.0</quarkus-qpid-jms.version>
         <protobuf.version>3.11.1</protobuf.version>
         <retrofit.version>2.5.0</retrofit.version>
