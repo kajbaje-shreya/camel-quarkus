@@ -48,6 +48,7 @@ env:
 
 jobs:
   initial-mvn-install:
+    if: github.repository == 'apache/camel-quarkus'
     runs-on: ubuntu-latest
     env:
       MAVEN_OPTS: -Xmx3000m
