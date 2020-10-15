@@ -62,7 +62,7 @@
         <httpclient.cache.version>4.5.5</httpclient.cache.version>
         <httpclient.version>4.5.12</httpclient.version><!-- keep in sync with both Camel and Quarkus -->
         <influxdb.version>2.20</influxdb.version>
-        <jackson.version>2.10.5</jackson.version>
+        <jackson.version>2.11.2.redhat-00002</jackson.version>
         <java.xml.ws.version>2.3.1</java.xml.ws.version>
         <jaxen.version>1.2.0</jaxen.version>
         <javassist.version>3.22.0-CR2</javassist.version><!-- debezium -->
