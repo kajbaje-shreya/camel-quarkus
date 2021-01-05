@@ -38,7 +38,7 @@ import javax.ws.rs.core.Response;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoIterable;
-import io.quarkus.mongodb.MongoClientName;
+import io.quarkus.mongodb.runtime.MongoClientName;
 import org.apache.camel.ProducerTemplate;
 import org.bson.Document;
 

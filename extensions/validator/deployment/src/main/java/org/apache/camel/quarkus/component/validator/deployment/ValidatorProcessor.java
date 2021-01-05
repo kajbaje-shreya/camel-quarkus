@@ -46,6 +46,19 @@ class ValidatorProcessor {
                         false,
                         false,
                         "org.apache.camel.support.processor.validation.DefaultValidationErrorHandler"));
+
+        reflectiveClass.produce(
+                new ReflectiveClassBuildItem(
+                        false,
+                        false,
+                        "com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDVFactoryImpl"));
+    }
+
+    @BuildStep
+    void registerNativeImageReources() {
+        resourceBundle.produce(new NativeImageResourceBundleBuildItem("com.sun.org.apache.xml.internal.res.XMLErrorResources"));
+        resourceBundle.produce(
+                new NativeImageResourceBundleBuildItem("com.sun.org.apache.xerces.internal.impl.msg.XMLSchemaMessages"));
     }
 
 }

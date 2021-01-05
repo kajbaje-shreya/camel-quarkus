@@ -33,7 +33,7 @@ import javax.ws.rs.core.Response;
 
 import com.mongodb.MongoGridFSException;
 import com.mongodb.client.MongoClient;
-import io.quarkus.mongodb.MongoClientName;
+import io.quarkus.mongodb.runtime.MongoClientName;
 import org.apache.camel.Exchange;
 import org.apache.camel.ProducerTemplate;
 import org.apache.camel.component.mongodb.gridfs.GridFsEndpoint;

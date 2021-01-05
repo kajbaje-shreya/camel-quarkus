@@ -21,7 +21,6 @@ import org.apache.camel.quarkus.component.debezium.common.it.AbstractDebeziumTes
 import org.apache.camel.quarkus.component.debezium.common.it.DebeziumPostgresResource;
 import org.apache.camel.quarkus.component.debezium.common.it.Type;
 import org.testcontainers.containers.PostgreSQLContainer;
-import org.testcontainers.utility.DockerImageName;
 
 public class DebeziumPostgresTestResource extends AbstractDebeziumTestResource<PostgreSQLContainer> {
 
@@ -36,9 +35,7 @@ public class DebeziumPostgresTestResource extends AbstractDebeziumTestResource<P
 
     @Override
     protected PostgreSQLContainer createContainer() {
-        DockerImageName imageName = DockerImageName.parse(POSTGRES_IMAGE)
-                .asCompatibleSubstituteFor("postgres");
-        return new PostgreSQLContainer<>(imageName)
+        return new PostgreSQLContainer<>(POSTGRES_IMAGE)
                 .withUsername(DB_USERNAME)
                 .withPassword(DB_PASSWORD)
                 .withDatabaseName(DebeziumPostgresResource.DB_NAME)

@@ -16,11 +16,13 @@
  */
 package org.apache.camel.quarkus.component.jpa.deployment;
 
+import io.quarkus.arc.deployment.UnremovableBeanBuildItem;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.annotations.ExecutionTime;
 import io.quarkus.deployment.annotations.Record;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
+import io.quarkus.hibernate.orm.runtime.DefaultEntityManagerFactoryProducer;
 import org.apache.camel.component.jpa.JpaComponent;
 import org.apache.camel.quarkus.component.jpa.CamelJpaRecorder;
 import org.apache.camel.quarkus.core.deployment.spi.CamelRuntimeBeanBuildItem;
@@ -32,6 +34,11 @@ class JpaProcessor {
     @BuildStep
     FeatureBuildItem feature() {
         return new FeatureBuildItem(FEATURE);
+    }
+
+    @BuildStep
+    UnremovableBeanBuildItem unremovableBeans() {
+        return UnremovableBeanBuildItem.beanClassNames(DefaultEntityManagerFactoryProducer.class.getName());
     }
 
     @Record(ExecutionTime.RUNTIME_INIT)

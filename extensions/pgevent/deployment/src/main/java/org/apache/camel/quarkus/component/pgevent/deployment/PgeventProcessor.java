@@ -22,7 +22,7 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 import com.impossibl.postgres.system.procs.ProcProvider;
-import io.quarkus.agroal.spi.JdbcDriverBuildItem;
+import io.quarkus.agroal.deployment.JdbcDriverBuildItem;
 import io.quarkus.datasource.common.runtime.DatabaseKind;
 import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;

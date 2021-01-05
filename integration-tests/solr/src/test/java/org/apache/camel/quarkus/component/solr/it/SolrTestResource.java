@@ -25,13 +25,12 @@ import org.slf4j.LoggerFactory;
 import org.testcontainers.containers.BindMode;
 import org.testcontainers.containers.SolrContainer;
 import org.testcontainers.containers.output.Slf4jLogConsumer;
-import org.testcontainers.utility.DockerImageName;
 
 public class SolrTestResource implements ContainerResourceLifecycleManager {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SolrTestResource.class);
 
-    private static final DockerImageName SOLR_IMAGE = DockerImageName.parse("solr:8.7.0");
+    private static final String SOLR_IMAGE = "solr:8.7.0";
     private static final String COLLECTION_NAME = "collection1";
     private static final String URL_FORMAT = "localhost:%s/solr/collection1";
 
