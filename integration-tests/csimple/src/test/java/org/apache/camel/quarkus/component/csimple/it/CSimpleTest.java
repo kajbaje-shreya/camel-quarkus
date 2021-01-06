@@ -14,19 +14,36 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.camel.quarkus.core;
+package org.apache.camel.quarkus.component.csimple.it;
 
-import org.apache.camel.builder.RouteBuilder;
+import io.quarkus.test.junit.QuarkusTest;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import org.junit.jupiter.api.Test;
 
-public class CoreRoutes extends RouteBuilder {
+import static org.hamcrest.Matchers.is;
 
-    @Override
-    public void configure() {
-        from("timer:keep-alive")
-                .routeId("timer")
-                .setBody().constant("I'm alive !")
-                .to("log:keep-alive");
+@QuarkusTest
+class CSimpleTest {
 
+    @Test
+    public void csimpleHello() {
+        RestAssured.given()
+                .body("Joe")
+                .contentType(ContentType.TEXT)
+                .post("/csimple/csimple-hello")
+                .then()
+                .body(is("Hello Joe"));
+    }
+
+    @Test
+    public void csimpleXml() {
+        RestAssured.given()
+                .body("Joe")
+                .contentType(ContentType.TEXT)
+                .post("/csimple/csimple-xml-dsl")
+                .then()
+                .body(is("Hi Joe"));
     }
 
 }

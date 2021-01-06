@@ -24,20 +24,10 @@
             http://camel.apache.org/schema/spring
             http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-    <route id="my-xml-route">
-        <from uri="timer:from-xml?period=3000"/>
+    <route id="csimple-xml-dsl">
+        <from uri="direct:csimple-xml-dsl"/>
         <setBody>
-            <constant>Hello World!!!</constant>
-        </setBody>
-        <to uri="log:from-xml"/>
-    </route>
-
-    <route id="namespace-aware-route">
-        <from uri="direct:namespace-aware"/>
-        <setBody>
-           <xpath resultType="java.lang.String">
-              /foo:foo-text/text()
-           </xpath>
+            <csimple>Hi ${body}</csimple>
         </setBody>
     </route>
 

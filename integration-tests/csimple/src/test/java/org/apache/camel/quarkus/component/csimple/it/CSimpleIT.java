@@ -14,19 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.camel.quarkus.core;
+package org.apache.camel.quarkus.component.csimple.it;
 
-import org.apache.camel.builder.RouteBuilder;
+import io.quarkus.test.junit.NativeImageTest;
 
-public class CoreRoutes extends RouteBuilder {
-
-    @Override
-    public void configure() {
-        from("timer:keep-alive")
-                .routeId("timer")
-                .setBody().constant("I'm alive !")
-                .to("log:keep-alive");
-
-    }
+@NativeImageTest
+class CSimpleIT extends CSimpleTest {
 
 }

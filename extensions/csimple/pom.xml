@@ -17,28 +17,23 @@
     limitations under the License.
 
 -->
-<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://camel.apache.org/schema/spring"
-        xmlns:foo="http://camel.apache.org/foo"
-        xsi:schemaLocation="
-            http://camel.apache.org/schema/spring
-            http://camel.apache.org/schema/spring/camel-spring.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.apache.camel.quarkus</groupId>
+        <artifactId>camel-quarkus-build-parent</artifactId>
+        <version>1.5.0-SNAPSHOT</version>
+        <relativePath>../../poms/build-parent/pom.xml</relativePath>
+    </parent>
 
-    <route id="my-xml-route">
-        <from uri="timer:from-xml?period=3000"/>
-        <setBody>
-            <constant>Hello World!!!</constant>
-        </setBody>
-        <to uri="log:from-xml"/>
-    </route>
+    <artifactId>camel-quarkus-csimple-parent</artifactId>
+    <name>Camel Quarkus :: CSimple</name>
+    <packaging>pom</packaging>
 
-    <route id="namespace-aware-route">
-        <from uri="direct:namespace-aware"/>
-        <setBody>
-           <xpath resultType="java.lang.String">
-              /foo:foo-text/text()
-           </xpath>
-        </setBody>
-    </route>
-
-</routes>
+    <modules>
+        <module>deployment</module>
+        <module>runtime</module>
+    </modules>
+</project>
