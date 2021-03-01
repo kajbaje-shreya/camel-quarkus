@@ -604,6 +604,7 @@
                                     <goal>enforce</goal>
                                 </goals>
                                 <configuration>
+                                    <skip>true</skip>
                                     <requireMavenVersion>
                                         <version>3.6.2</version>
                                     </requireMavenVersion>
