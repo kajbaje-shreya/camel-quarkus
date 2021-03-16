@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-dependencies</artifactId>
-        <version>3.7.0</version>
+        <version>3.7.0.fuse-800005</version>
     </parent>
 
     <groupId>org.apache.camel.quarkus</groupId>
@@ -46,7 +46,7 @@
         <bouncycastle.version>${bouncycastle-version}</bouncycastle.version><!-- keep in sync with Camel -->
 
         <camel.major.minor>3.7</camel.major.minor> <!-- run after each change: cd docs && mvndev validate -->
-        <camel.version>${camel.major.minor}.0</camel.version>
+        <camel.version>3.7.0.fuse-800005</camel.version>
         <camel.docs.components.xref>${camel.major.minor}.x@components</camel.docs.components.xref><!-- the version in Camel's docs/components/antora.yml -->
         <camel.docs.branch>camel-${camel.major.minor}.x</camel.docs.branch><!-- The stable branch on which our Antora docs depends -->
 
@@ -92,7 +92,8 @@
         <okio.version>${squareup-okio-version}</okio.version><!-- keep in sync with okhttp -->
         <optaplanner.version>7.46.0.Final</optaplanner.version>
         <quarkiverse-minio.version>0.2.0</quarkiverse-minio.version>
-        <quarkus.version>1.11.0.Final</quarkus.version>
+        <quarkus.version>1.11.6.Final-redhat-00001</quarkus.version>
+        <quarkus-bom-test.version>1.11.6.Final</quarkus-bom-test.version>
         <quarkus-google-cloud.version>0.3.0</quarkus-google-cloud.version>
         <quarkus-hazelcast-client.version>1.1.1</quarkus-hazelcast-client.version>
         <quarkus-qpid-jms.version>0.22.0</quarkus-qpid-jms.version>
