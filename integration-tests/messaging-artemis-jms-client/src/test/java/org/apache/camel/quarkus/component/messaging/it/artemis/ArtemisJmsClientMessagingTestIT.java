@@ -20,10 +20,7 @@ import io.quarkus.test.junit.NativeImageTest;
 import org.junit.jupiter.api.condition.EnabledIf;
 
 @NativeImageTest
-@EnabledIf(
-        value = "redHatRegistryAuthenticated",
-        disabledReason = "Host is not authenticated with registry.redhat.io"
-)
+@EnabledIf(value = "redHatRegistryAuthenticated", disabledReason = "Host is not authenticated with registry.redhat.io")
 class ArtemisJmsClientMessagingTestIT extends ArtemisJmsClientMessagingTest {
 
 }
