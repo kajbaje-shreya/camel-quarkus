@@ -39,10 +39,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @QuarkusTest
 @QuarkusTestResource(AMQBrokerTestResource.class)
-@EnabledIf(
-        value = "redHatRegistryAuthenticated",
-        disabledReason = "Host is not authenticated with registry.redhat.io"
-)
+@EnabledIf(value = "redHatRegistryAuthenticated", disabledReason = "Host is not authenticated with registry.redhat.io")
 class ArtemisJmsClientMessagingTest {
 
     @ParameterizedTest
