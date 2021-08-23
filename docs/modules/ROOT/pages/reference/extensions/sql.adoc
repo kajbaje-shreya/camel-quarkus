@@ -51,7 +51,7 @@ quarkus.native.resources.includes = queries.sql, sql/*.sql
 
 |icon:lock[title=Fixed at build time] [[quarkus.camel.sql.script-files]]`link:#quarkus.camel.sql.script-files[quarkus.camel.sql.script-files]`
 
-A comma separated list of paths to script files referenced by SQL endpoints. Script files that only need to be accessible from the classpath should be specified on this property. Paths can either be schemeless (E.g sql/my-script.sql) or be prefixed with the classpath: URI scheme (E.g classpath:sql/my-script.sql). Other URI schemes are not supported.
+A comma separated list of absolute classpath resource paths pointing at SQL scripts referenced by SQL endpoints. They must not start with slash (e.g. `sql/my-script.sql`) and they may optionally start with the `classpath:` prefix (e.g. `classpath:sql/my-script.sql`).
 | `string`
 | 
 |===
