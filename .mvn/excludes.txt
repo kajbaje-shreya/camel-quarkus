@@ -770,7 +770,6 @@
 :camel-quarkus-master
 :camel-quarkus-master-deployment
 :camel-quarkus-master-parent
-:camel-quarkus-maven-plugin
 :camel-quarkus-micrometer
 :camel-quarkus-micrometer-deployment
 :camel-quarkus-micrometer-parent
