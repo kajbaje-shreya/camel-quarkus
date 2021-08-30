@@ -278,7 +278,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>apache.snapshots</id>
-            <url>http://indy.psi.redhat.com/api/content/maven/group/static/</url>
+            <url>https://repository.apache.org/snapshots/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -288,7 +288,7 @@
         </pluginRepository>
         <pluginRepository>
             <id>indy</id>
-            <url>http://indy.psi.redhat.com/browse/maven/group/static/</url>
+            <url>http://indy.psi.redhat.com/api/content/maven/group/static/</url>
             <name>Apache Snapshot Repo</name>
             <snapshots>
                 <enabled>false</enabled>
