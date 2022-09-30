@@ -70,6 +70,7 @@ camel-paho-mqtt5
 camel-platform-http-vertx
 camel-quartz
 camel-rest
+camel-rest-openapi
 camel-salesforce
 camel-saxon
 camel-scheduler

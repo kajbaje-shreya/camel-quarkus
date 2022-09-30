@@ -63,6 +63,5 @@
         <module>../../../integration-tests/js-dsl</module>
         <module>../../../integration-tests/jsch</module>
         <module>../../../integration-tests/jslt</module>
-        <module>../../../integration-tests/json-validator</module>
     </modules>
 </project>

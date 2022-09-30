@@ -33,6 +33,7 @@
     <name>Camel Quarkus :: Integration Tests :: Mixed Native :: Group 03</name>
 
     <modules>
+        <module>../../../integration-tests/json-validator</module>
         <module>../../../integration-tests/jsonata</module>
         <module>../../../integration-tests/kotlin</module>
         <module>../../../integration-tests/kudu</module>
@@ -62,6 +63,5 @@
         <module>../../../integration-tests/qute</module>
         <module>../../../integration-tests/rabbitmq</module>
         <module>../../../integration-tests/reactive-streams</module>
-        <module>../../../integration-tests/rest-openapi</module>
     </modules>
 </project>

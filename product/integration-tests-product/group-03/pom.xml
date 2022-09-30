@@ -33,7 +33,6 @@
     <name>Camel Quarkus :: Integration Tests :: Product :: Group 03</name>
 
     <modules>
-        <module>../../../integration-tests/main-devmode</module>
         <module>../../../integration-tests/main-discovery-disabled</module>
         <module>../../../integration-tests/main-unknown-args-fail</module>
         <module>../../../integration-tests/main-unknown-args-ignore</module>
@@ -52,6 +51,7 @@
         <module>../../../integration-tests/quartz</module>
         <module>../../../integration-tests/quartz-clustered</module>
         <module>../../../integration-tests/rest</module>
+        <module>../../../integration-tests/rest-openapi</module>
         <module>../../../integration-tests/salesforce</module>
         <module>../../../integration-tests/saxon</module>
         <module>../../../integration-tests/slack</module>

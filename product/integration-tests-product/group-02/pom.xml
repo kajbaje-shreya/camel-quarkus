@@ -61,5 +61,6 @@
         <module>../../../integration-tests/kubernetes</module>
         <module>../../../integration-tests/mail</module>
         <module>../../../integration-tests/main-command-mode</module>
+        <module>../../../integration-tests/main-devmode</module>
     </modules>
 </project>

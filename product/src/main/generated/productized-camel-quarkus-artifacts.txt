@@ -173,6 +173,7 @@ camel-quarkus-integration-test-platform-http
 camel-quarkus-integration-test-quartz
 camel-quarkus-integration-test-quartz-clustered
 camel-quarkus-integration-test-rest
+camel-quarkus-integration-test-rest-openapi
 camel-quarkus-integration-test-route-configurations
 camel-quarkus-integration-test-salesforce
 camel-quarkus-integration-test-saxon
@@ -300,6 +301,9 @@ camel-quarkus-quartz-deployment
 camel-quarkus-quartz-parent
 camel-quarkus-rest
 camel-quarkus-rest-deployment
+camel-quarkus-rest-openapi
+camel-quarkus-rest-openapi-deployment
+camel-quarkus-rest-openapi-parent
 camel-quarkus-rest-parent
 camel-quarkus-salesforce
 camel-quarkus-salesforce-deployment

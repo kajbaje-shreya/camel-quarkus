@@ -557,6 +557,7 @@ org.apache.camel:camel-platform-http
 org.apache.camel:camel-platform-http-vertx
 org.apache.camel:camel-quartz
 org.apache.camel:camel-rest
+org.apache.camel:camel-rest-openapi
 org.apache.camel:camel-salesforce
 org.apache.camel:camel-saxon
 org.apache.camel:camel-scheduler
@@ -711,6 +712,8 @@ org.apache.camel.quarkus:camel-quarkus-quartz
 org.apache.camel.quarkus:camel-quarkus-quartz-deployment
 org.apache.camel.quarkus:camel-quarkus-rest
 org.apache.camel.quarkus:camel-quarkus-rest-deployment
+org.apache.camel.quarkus:camel-quarkus-rest-openapi
+org.apache.camel.quarkus:camel-quarkus-rest-openapi-deployment
 org.apache.camel.quarkus:camel-quarkus-salesforce
 org.apache.camel.quarkus:camel-quarkus-salesforce-deployment
 org.apache.camel.quarkus:camel-quarkus-saxon

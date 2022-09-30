@@ -196,7 +196,7 @@
         <!-- <module>reactive-streams</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <!-- <module>ref</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <module>rest</module>
-        <!-- <module>rest-openapi</module> disabled by cq-prod-maven-plugin:prod-excludes -->
+        <module>rest-openapi</module>
         <!-- <module>rss</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <!-- <module>saga</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <module>salesforce</module>

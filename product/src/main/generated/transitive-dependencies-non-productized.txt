@@ -552,7 +552,6 @@ org.apache.camel:camel-reactive-executor-vertx
 org.apache.camel:camel-reactive-streams
 org.apache.camel:camel-redis
 org.apache.camel:camel-ref
-org.apache.camel:camel-rest-openapi
 org.apache.camel:camel-robotframework
 org.apache.camel:camel-rss
 org.apache.camel:camel-saga
@@ -947,8 +946,6 @@ org.apache.camel.quarkus:camel-quarkus-redis
 org.apache.camel.quarkus:camel-quarkus-redis-deployment
 org.apache.camel.quarkus:camel-quarkus-ref
 org.apache.camel.quarkus:camel-quarkus-ref-deployment
-org.apache.camel.quarkus:camel-quarkus-rest-openapi
-org.apache.camel.quarkus:camel-quarkus-rest-openapi-deployment
 org.apache.camel.quarkus:camel-quarkus-robotframework
 org.apache.camel.quarkus:camel-quarkus-robotframework-deployment
 org.apache.camel.quarkus:camel-quarkus-rss
