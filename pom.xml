@@ -60,7 +60,7 @@
         <quarkiverse-minio.version>2.9.2</quarkiverse-minio.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/minio/quarkus-minio-parent/ -->
         <quarkiverse-mybatis.version>1.0.4</quarkiverse-mybatis.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/mybatis/quarkus-mybatis-parent/ -->
         <quarkiverse-tika.version>1.0.3</quarkiverse-tika.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/tika/quarkus-tika-parent/ -->
-        <quarkus.version>2.13.0.Final</quarkus.version><!-- https://repo1.maven.org/maven2/io/quarkus/quarkus-bom/ -->
+        <quarkus.version>2.13.0.CR1-redhat-00001</quarkus.version><!-- https://repo1.maven.org/maven2/io/quarkus/quarkus-bom/ -->
         <quarkus-community.version>2.13.0.Final</quarkus-community.version>
         <quarkus-hazelcast-client.version>3.0.0</quarkus-hazelcast-client.version><!-- https://repo1.maven.org/maven2/com/hazelcast/quarkus-hazelcast-client-bom/ -->
         <quarkus-qpid-jms.version>0.38.0</quarkus-qpid-jms.version><!-- https://repo1.maven.org/maven2/org/amqphub/quarkus/quarkus-qpid-jms-bom/ -->
@@ -79,7 +79,7 @@
         <azure-core-test.version>1.7.9</azure-core-test.version>
         <cassandra-driver-test.version>3.7.1</cassandra-driver-test.version><!-- Keep in sync with testcontainers instead of Debezium bom -->
         <bouncycastle.version>1.70</bouncycastle.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:org.bouncycastle:bcprov-jdk15on -->
-        <caffeine.version>2.9.3</caffeine.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:com.github.ben-manes.caffeine:caffeine -->
+        <caffeine.version>2.9.3.redhat-00001</caffeine.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:com.github.ben-manes.caffeine:caffeine -->
         <commons-beanutils.version>${commons-beanutils-version}</commons-beanutils.version>
         <commons-cli.version>1.4</commons-cli.version><!-- keep in sync with Quarkus, via quarkus-bootstrap-core -->
         <commons-collections.version>3.2.2</commons-collections.version><!-- used by hbase, should be pretty stable as commons-collections are not developed actively anymore -->
@@ -130,13 +130,13 @@
         <okio.version>${squareup-okio-version}</okio.version>
         <opencensus.version>0.31.0</opencensus.version><!-- Mess in Google cloud. Keep in sync with version used in com.google.http-client:google-http-client -->
         <perfmark-api.version>0.25.0</perfmark-api.version><!-- @sync io.grpc:grpc-netty-shaded:${grpc.version} dep:io.perfmark:perfmark-api -->
-        <protobuf.version>3.19.3</protobuf.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:com.google.protobuf:protobuf-java -->
+        <protobuf.version>3.19.3.redhat-00001</protobuf.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:com.google.protobuf:protobuf-java -->
         <reactor-core.version>3.4.14</reactor-core.version><!-- @sync com.azure:azure-core:${azure-core.version} dep:io.projectreactor:reactor-core -->
         <reactor-netty.version>${reactor-netty-version}</reactor-netty.version>
         <retrofit.version>2.5.0</retrofit.version>
         <smallrye.reactive.messaging.camel.version>3.18.0</smallrye.reactive.messaging.camel.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:io.smallrye.reactive:smallrye-reactive-messaging-provider -->
         <spring.version>${spring5-version}</spring.version>
-        <snakeyaml.version>1.32</snakeyaml.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:org.yaml:snakeyaml -->
+        <snakeyaml.version>1.32.0.redhat-00001</snakeyaml.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:org.yaml:snakeyaml -->
         <tablesaw.version>0.43.1</tablesaw.version>
         <threetenbp.version>1.6.0</threetenbp.version>
         <xalan.version>${xalan-version}</xalan.version>
@@ -706,7 +706,7 @@
                                                 <exclude>ch.qos.logback:logback-core</exclude><!-- dismiss; the functionality is provided by JBoss Log Manager provided via quarkus-core -->
                                                 <exclude>ch.qos.logback:logback-access</exclude><!-- dismiss; the functionality is provided by JBoss Log Manager provided via quarkus-core -->
                                                 <exclude>ch.qos.logback:logback</exclude><!-- dismiss; the functionality is provided by JBoss Log Manager provided via quarkus-core -->
-                                                <exclude>com.github.fge:*</exclude><!-- Use com.github.java-json-tools:* instead -->
+                                                <!-- <exclude>com.github.fge:*</exclude> workaround https://issues.redhat.com/browse/QUARKUS-1974 --><!-- Use com.github.java-json-tools:* instead -->
                                                 <exclude>com.google.code.findbugs:jsr305</exclude>
                                                 <exclude>com.sun.activation:javax.activation</exclude><!-- use com.sun.activation:jakarta.activation instead -->
                                                 <exclude>commons-logging:commons-logging</exclude><!-- use org.jboss.logging:commons-logging-jboss-logging instead of commons-logging and commons-logging-api -->
