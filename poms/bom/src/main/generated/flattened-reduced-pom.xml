@@ -10250,7 +10250,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus</artifactId>
-        <version>8.27.0.Final</version>
+        <version>8.29.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -10265,7 +10265,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-deployment</artifactId>
-        <version>8.27.0.Final</version>
+        <version>8.29.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -10280,7 +10280,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson</artifactId>
-        <version>8.27.0.Final</version>
+        <version>8.29.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
@@ -10295,7 +10295,7 @@
       <dependency>
         <groupId>org.optaplanner</groupId>
         <artifactId>optaplanner-quarkus-jackson-deployment</artifactId>
-        <version>8.27.0.Final</version>
+        <version>8.29.0.Final</version>
         <exclusions>
           <exclusion>
             <groupId>jakarta.activation</groupId>
