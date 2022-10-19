@@ -1890,7 +1890,6 @@ org.apache.cxf:cxf-rt-transports-http
 org.apache.cxf:cxf-rt-ws-addr
 org.apache.cxf:cxf-rt-ws-policy
 org.apache.cxf:cxf-rt-wsdl
-org.apache.cxf.xjc-utils:cxf-xjc-runtime
 org.apache.directory.api:api-asn1-api
 org.apache.directory.api:api-asn1-ber
 org.apache.directory.api:api-i18n

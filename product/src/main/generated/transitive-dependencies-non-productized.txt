@@ -1078,7 +1078,6 @@ org.apache.cxf:cxf-rt-rs-security-jose
 org.apache.cxf:cxf-rt-rs-security-jose-jaxrs
 org.apache.cxf:cxf-rt-rs-security-oauth2
 org.apache.cxf:cxf-rt-security
-org.apache.cxf.xjc-utils:cxf-xjc-runtime
 org.apache.directory.api:api-asn1-api
 org.apache.directory.api:api-asn1-ber
 org.apache.directory.api:api-i18n
