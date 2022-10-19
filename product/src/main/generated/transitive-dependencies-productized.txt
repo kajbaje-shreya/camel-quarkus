@@ -558,6 +558,7 @@ org.apache.camel:camel-paho-mqtt5
 org.apache.camel:camel-platform-http
 org.apache.camel:camel-platform-http-vertx
 org.apache.camel:camel-quartz
+org.apache.camel:camel-ref
 org.apache.camel:camel-rest
 org.apache.camel:camel-rest-openapi
 org.apache.camel:camel-salesforce
@@ -717,6 +718,8 @@ org.apache.camel.quarkus:camel-quarkus-platform-http
 org.apache.camel.quarkus:camel-quarkus-platform-http-deployment
 org.apache.camel.quarkus:camel-quarkus-quartz
 org.apache.camel.quarkus:camel-quarkus-quartz-deployment
+org.apache.camel.quarkus:camel-quarkus-ref
+org.apache.camel.quarkus:camel-quarkus-ref-deployment
 org.apache.camel.quarkus:camel-quarkus-rest
 org.apache.camel.quarkus:camel-quarkus-rest-deployment
 org.apache.camel.quarkus:camel-quarkus-rest-openapi

@@ -87,6 +87,7 @@
 *** xref:reference/extensions/jackson-protobuf.adoc[Protobuf Jackson]
 *** xref:reference/extensions/quartz.adoc[Quartz]
 *** xref:reference/extensions/rest-openapi.adoc[REST OpenApi]
+*** xref:reference/extensions/ref.adoc[Ref]
 *** xref:reference/extensions/rest.adoc[Rest]
 *** xref:reference/extensions/seda.adoc[SEDA]
 *** xref:reference/extensions/soap.adoc[SOAP dataformat]

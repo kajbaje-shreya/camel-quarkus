@@ -179,6 +179,7 @@ camel-quarkus-integration-test-paho-mqtt5
 camel-quarkus-integration-test-platform-http
 camel-quarkus-integration-test-quartz
 camel-quarkus-integration-test-quartz-clustered
+camel-quarkus-integration-test-ref
 camel-quarkus-integration-test-rest
 camel-quarkus-integration-test-rest-openapi
 camel-quarkus-integration-test-route-configurations
@@ -307,6 +308,9 @@ camel-quarkus-poms
 camel-quarkus-quartz
 camel-quarkus-quartz-deployment
 camel-quarkus-quartz-parent
+camel-quarkus-ref
+camel-quarkus-ref-deployment
+camel-quarkus-ref-parent
 camel-quarkus-rest
 camel-quarkus-rest-deployment
 camel-quarkus-rest-openapi

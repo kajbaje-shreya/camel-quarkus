@@ -40,7 +40,6 @@
         <module>../../../integration-test-groups/foundation/controlbus</module>
         <module>../../../integration-test-groups/foundation/customized-log-component</module>
         <module>../../../integration-test-groups/foundation/language</module>
-        <module>../../../integration-test-groups/foundation/ref</module>
         <module>../../../integration-test-groups/foundation/stream</module>
         <module>../../../integration-test-groups/foundation/type-converter</module>
         <module>../../../integration-test-groups/mongodb/mongodb-gridfs</module>
@@ -63,5 +62,6 @@
         <module>../../../integration-tests/csv</module>
         <module>../../../integration-tests/datasonnet</module>
         <module>../../../integration-tests/debezium</module>
+        <module>../../../integration-tests/digitalocean</module>
     </modules>
 </project>

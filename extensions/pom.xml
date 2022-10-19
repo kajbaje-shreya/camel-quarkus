@@ -194,7 +194,7 @@
         <!-- <module>qute</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <!-- <module>rabbitmq</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <!-- <module>reactive-streams</module> disabled by cq-prod-maven-plugin:prod-excludes -->
-        <!-- <module>ref</module> disabled by cq-prod-maven-plugin:prod-excludes -->
+        <module>ref</module>
         <module>rest</module>
         <module>rest-openapi</module>
         <!-- <module>rss</module> disabled by cq-prod-maven-plugin:prod-excludes -->

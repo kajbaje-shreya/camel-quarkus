@@ -71,6 +71,7 @@ camel-paho
 camel-paho-mqtt5
 camel-platform-http-vertx
 camel-quartz
+camel-ref
 camel-rest
 camel-rest-openapi
 camel-salesforce
