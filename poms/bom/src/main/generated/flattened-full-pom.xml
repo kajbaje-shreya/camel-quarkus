@@ -10338,7 +10338,7 @@
       <dependency>
         <groupId>org.graalvm.js</groupId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
         <artifactId>js-scriptengine</artifactId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
-        <version>21.3.2.0-1</version><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
+        <version>21.3.5.0-1</version><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
       </dependency>
       <dependency>
         <groupId>org.influxdb</groupId><!-- org.apache.camel.quarkus:camel-quarkus-bom:${project.version} -->
