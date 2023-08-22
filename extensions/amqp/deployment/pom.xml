@@ -33,6 +33,12 @@
         <dependency>
             <groupId>org.amqphub.quarkus</groupId>
             <artifactId>quarkus-qpid-jms-deployment</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.quarkus</groupId>
+                    <artifactId>quarkus-jms-spi-deployment</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>jakarta.jms</groupId>
