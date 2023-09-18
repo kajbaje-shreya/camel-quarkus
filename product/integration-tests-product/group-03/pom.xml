@@ -33,6 +33,7 @@
     <name>Camel Quarkus :: Integration Tests :: Product :: Group 03</name>
 
     <modules>
+        <module>../../../integration-tests/fhir</module>
         <module>../../../integration-tests/ftp</module>
         <module>../../../integration-tests/google-bigquery</module>
         <module>../../../integration-tests/google-pubsub</module>
@@ -66,6 +67,5 @@
         <module>../../../integration-tests/main-unknown-args-fail</module>
         <module>../../../integration-tests/main-unknown-args-ignore</module>
         <module>../../../integration-tests/main-xml-io</module>
-        <module>../../../integration-tests/main-xml-io-with-beans</module>
     </modules>
 </project>

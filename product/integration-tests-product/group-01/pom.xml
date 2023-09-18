@@ -48,6 +48,7 @@
         <module>../../../integration-test-groups/compression/zipfile</module>
         <module>../../../integration-test-groups/cxf-soap/cxf-soap-client</module>
         <module>../../../integration-test-groups/cxf-soap/cxf-soap-converter</module>
+        <module>../../../integration-test-groups/cxf-soap/cxf-soap-metrics</module>
         <module>../../../integration-test-groups/cxf-soap/cxf-soap-mtom</module>
         <module>../../../integration-test-groups/cxf-soap/cxf-soap-mtom-awt</module>
         <module>../../../integration-test-groups/cxf-soap/cxf-soap-rest</module>
