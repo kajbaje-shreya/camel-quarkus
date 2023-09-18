@@ -6192,7 +6192,7 @@
       <dependency>
         <groupId>io.perfmark</groupId>
         <artifactId>perfmark-api</artifactId>
-        <version>0.26.0</version>
+        <version>0.26.0.redhat-00001</version>
       </dependency>
       <dependency>
         <groupId>io.projectreactor</groupId>
@@ -6464,22 +6464,22 @@
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcmail-jdk18on</artifactId>
-        <version>1.74</version>
+        <version>1.74.0</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcpg-jdk18on</artifactId>
-        <version>1.74</version>
+        <version>1.74.0.redhat-00002</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-ext-jdk18on</artifactId>
-        <version>1.74</version>
+        <version>1.74.0</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcutil-jdk18on</artifactId>
-        <version>1.74</version>
+        <version>1.74.0.redhat-00002</version>
       </dependency>
       <dependency>
         <groupId>org.brotli</groupId>
@@ -6505,7 +6505,7 @@
       <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js</artifactId>
-        <version>23.0.1</version>
+        <version>23.0.1.0-1</version>
       </dependency>
       <dependency>
         <groupId>org.influxdb</groupId>
