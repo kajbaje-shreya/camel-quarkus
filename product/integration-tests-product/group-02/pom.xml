@@ -67,5 +67,6 @@
         <module>../../../integration-tests/cassandraql</module>
         <module>../../../integration-tests/core-discovery-disabled</module>
         <module>../../../integration-tests/crypto</module>
+        <module>../../../integration-tests/fhir</module>
     </modules>
 </project>

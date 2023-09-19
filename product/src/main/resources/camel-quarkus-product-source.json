@@ -92,6 +92,11 @@
             "native": "supported",
             "comment": "community/community since CEQ 2.2.0, since CEQ 2.7.1"
         },
+        "camel-quarkus-cli-connector": {
+            "jvm": "supported",
+            "native": "supported",
+            "comment": "supported since CEQ 3.2.0"
+        },
         "camel-quarkus-controlbus": {
             "jvm": "supported",
             "native": "supported",
@@ -462,6 +467,11 @@
             "native": "supported",
             "comment": "supported/tp since CEQ 2.2.0, supported since CEQ 2.7.1"
         },
+        "camel-quarkus-splunk": {
+            "jvm": "supported",
+            "native": "supported",
+            "comment": "supported since CEQ 3.2.0"
+        },
         "camel-quarkus-sql": {
             "jvm": "supported",
             "native": "supported",
@@ -541,11 +551,6 @@
             "jvm": "supported",
             "native": "supported",
             "comment": "supported since CEQ 2.13.1"
-        },
-        "camel-quarkus-cli-connector": {
-            "jvm": "supported",
-            "native": "supported",
-            "comment": "supported since CEQ 3.2.0"
         }
         
     },

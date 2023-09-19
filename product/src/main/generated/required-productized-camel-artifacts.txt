@@ -97,6 +97,7 @@ camel-seda
 camel-slack
 camel-snmp
 camel-soap
+camel-splunk
 camel-sql
 camel-telegram
 camel-timer

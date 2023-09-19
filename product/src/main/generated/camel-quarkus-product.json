@@ -155,6 +155,15 @@
         },
         {
             "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-cli-connector",
+            "metadata": {
+                "redhat-support": [
+                    "supported"
+                ]
+            }
+        },
+        {
+            "group-id": "org.apache.camel.quarkus",
             "artifact-id": "camel-quarkus-controlbus",
             "metadata": {
                 "redhat-support": [
@@ -758,6 +767,15 @@
         },
         {
             "group-id": "org.apache.camel.quarkus",
+            "artifact-id": "camel-quarkus-splunk",
+            "metadata": {
+                "redhat-support": [
+                    "supported"
+                ]
+            }
+        },
+        {
+            "group-id": "org.apache.camel.quarkus",
             "artifact-id": "camel-quarkus-sql",
             "metadata": {
                 "redhat-support": [
@@ -876,15 +894,6 @@
         {
             "group-id": "org.apache.camel.quarkus",
             "artifact-id": "camel-quarkus-zip-deflater",
-            "metadata": {
-                "redhat-support": [
-                    "supported"
-                ]
-            }
-        },
-        {
-            "group-id": "org.apache.camel.quarkus",
-            "artifact-id": "camel-quarkus-cli-connector",
             "metadata": {
                 "redhat-support": [
                     "supported"

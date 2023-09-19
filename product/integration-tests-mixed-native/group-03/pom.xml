@@ -53,7 +53,6 @@
         <module>../../../integration-tests/sjms2-artemis-client</module>
         <module>../../../integration-tests/sjms2-qpid-amqp-client</module>
         <module>../../../integration-tests/smallrye-reactive-messaging</module>
-        <module>../../../integration-tests/splunk</module>
         <module>../../../integration-tests/spring-rabbitmq</module>
         <module>../../../integration-tests/ssh</module>
         <module>../../../integration-tests/stax</module>

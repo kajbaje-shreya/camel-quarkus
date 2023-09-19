@@ -33,7 +33,6 @@
     <name>Camel Quarkus :: Integration Tests :: Product :: Group 04</name>
 
     <modules>
-        <module>../../../integration-tests/main-xml-io-with-beans</module>
         <module>../../../integration-tests/management</module>
         <module>../../../integration-tests/mapstruct</module>
         <module>../../../integration-tests/master</module>
@@ -60,6 +59,7 @@
         <module>../../../integration-tests/saxon</module>
         <module>../../../integration-tests/slack</module>
         <module>../../../integration-tests/soap</module>
+        <module>../../../integration-tests/splunk</module>
         <module>../../../integration-tests/sql</module>
         <module>../../../integration-tests/telegram</module>
         <module>../../../integration-tests/validator</module>

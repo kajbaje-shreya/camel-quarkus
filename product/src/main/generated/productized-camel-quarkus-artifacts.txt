@@ -242,6 +242,7 @@ camel-quarkus-integration-test-seda
 camel-quarkus-integration-test-slack
 camel-quarkus-integration-test-snmp
 camel-quarkus-integration-test-soap
+camel-quarkus-integration-test-splunk
 camel-quarkus-integration-test-sql
 camel-quarkus-integration-test-support
 camel-quarkus-integration-test-support-mock-backend
@@ -445,6 +446,9 @@ camel-quarkus-snmp-parent
 camel-quarkus-soap
 camel-quarkus-soap-deployment
 camel-quarkus-soap-parent
+camel-quarkus-splunk
+camel-quarkus-splunk-deployment
+camel-quarkus-splunk-parent
 camel-quarkus-sql
 camel-quarkus-sql-deployment
 camel-quarkus-sql-parent

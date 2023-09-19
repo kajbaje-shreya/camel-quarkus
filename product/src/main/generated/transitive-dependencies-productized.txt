@@ -675,6 +675,7 @@ org.apache.camel:camel-seda
 org.apache.camel:camel-slack
 org.apache.camel:camel-snmp
 org.apache.camel:camel-soap
+org.apache.camel:camel-splunk
 org.apache.camel:camel-sql
 org.apache.camel:camel-support
 org.apache.camel:camel-telegram
@@ -887,6 +888,8 @@ org.apache.camel.quarkus:camel-quarkus-snmp
 org.apache.camel.quarkus:camel-quarkus-snmp-deployment
 org.apache.camel.quarkus:camel-quarkus-soap
 org.apache.camel.quarkus:camel-quarkus-soap-deployment
+org.apache.camel.quarkus:camel-quarkus-splunk
+org.apache.camel.quarkus:camel-quarkus-splunk-deployment
 org.apache.camel.quarkus:camel-quarkus-sql
 org.apache.camel.quarkus:camel-quarkus-sql-deployment
 org.apache.camel.quarkus:camel-quarkus-support-aws2
@@ -1035,6 +1038,7 @@ org.apache.neethi:neethi
 org.apache.qpid:proton-j
 org.apache.qpid:qpid-jms-client
 org.apache.santuario:xmlsec
+org.apache.servicemix.bundles:org.apache.servicemix.bundles.splunk
 org.apache.sshd:sshd-common
 org.apache.velocity:velocity-engine-core
 org.apache.ws.xmlschema:xmlschema-core
