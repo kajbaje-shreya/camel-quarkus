@@ -38,13 +38,13 @@ public class Aws2S3QuarkusClientTestEnvCustomizer extends Aws2S3TestEnvCustomize
 
         Map<String, String> envContextProperties = envContext.getProperties();
 
-        if (envContext.isUseDefaultCredentialsProvider()) {
-            envContext.property("quarkus.s3.aws.credentials.type", "default");
-        } else {
+        // if (envContext.isUseDefaultCredentialsProvider()) {
+        //     envContext.property("quarkus.s3.aws.credentials.type", "default");
+        // } else {
             envContext.property("quarkus.s3.aws.credentials.static-provider.access-key-id", envContext.getAccessKey());
             envContext.property("quarkus.s3.aws.credentials.static-provider.secret-access-key", envContext.getSecretKey());
             envContext.property("quarkus.s3.aws.credentials.type", "static");
-        }
+        // }
         envContext.property("quarkus.s3.aws.region", envContext.getRegion());
 
         // Propagate localstack environment config to Quarkus AWS if required
