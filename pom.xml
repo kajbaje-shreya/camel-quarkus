@@ -47,14 +47,14 @@
         <camel.docs.branch>camel-${camel.major.minor}.x</camel.docs.branch><!-- The stable camel branch on which our Antora docs depends -->
         <camel.sb.docs.branch>camel-spring-boot-${camel.major.minor}.x</camel.sb.docs.branch><!-- The stable camel-spring-boot branch on which our Antora docs depends -->
         <camel-quarkus-community.version>3.8.0</camel-quarkus-community.version>
-        <camel-sap.version>4.4.0.redhat-00002</camel-sap.version>
+        <camel-sap.version>4.4.0.redhat-00008</camel-sap.version>
         <cassandra-quarkus.version>1.2.0</cassandra-quarkus.version><!-- This should be in sync with quarkus-platform https://repo1.maven.org/maven2/com/datastax/oss/quarkus/cassandra-quarkus-bom/ -->
         <debezium.version>2.5.2.Final</debezium.version> <!-- This should be in sync with quarkus-platform https://github.com/quarkusio/quarkus-platform-->
         <optaplanner.version>9.37.0.Final</optaplanner.version><!-- This should be in sync with quarkus-platform https://repo1.maven.org/maven2/org/optaplanner/optaplanner-quarkus/ -->
         <quarkiverse-amazonservices.version>2.12.1</quarkiverse-amazonservices.version><!-- This should be in sync with quarkus-platform https://repo1.maven.org/maven2/io/quarkiverse/amazonservices/quarkus-amazon-services-parent/ -->
         <quarkiverse-artemis.version>3.2.0</quarkiverse-artemis.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/artemis/quarkus-artemis-parent/ -->
-        <quarkiverse-cxf.version>3.8.2</quarkiverse-cxf.version><!-- This should be in sync with quarkus-platform https://repo1.maven.org/maven2/io/quarkiverse/cxf/quarkus-cxf-parent/ -->
-        <quarkiverse-cxf-community.version>3.8.2</quarkiverse-cxf-community.version>
+        <quarkiverse-cxf.version>3.8.3</quarkiverse-cxf.version><!-- This should be in sync with quarkus-platform https://repo1.maven.org/maven2/io/quarkiverse/cxf/quarkus-cxf-parent/ -->
+        <quarkiverse-cxf-community.version>3.8.3</quarkiverse-cxf-community.version>
         <quarkiverse-freemarker.version>1.0.0</quarkiverse-freemarker.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/freemarker/quarkus-freemarker-parent/ -->
         <quarkiverse-groovy.version>3.7.1</quarkiverse-groovy.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/groovy/quarkus-groovy-parent/ -->
         <quarkiverse-jackson-jq.version>2.0.2</quarkiverse-jackson-jq.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/jackson-jq/quarkus-jackson-jq-parent/ -->
@@ -65,8 +65,8 @@
         <quarkiverse-mybatis.version>2.2.1</quarkiverse-mybatis.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/mybatis/quarkus-mybatis-parent/ -->
         <quarkiverse-pooled-jms.version>2.3.0</quarkiverse-pooled-jms.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/messaginghub/quarkus-pooled-jms-parent/ -->
         <quarkiverse-tika.version>2.0.2</quarkiverse-tika.version><!-- https://repo1.maven.org/maven2/io/quarkiverse/tika/quarkus-tika-parent/ -->
-        <quarkus.version>3.8.3</quarkus.version><!-- https://repo1.maven.org/maven2/io/quarkus/quarkus-bom/ -->
-        <quarkus-community.version>3.8.3</quarkus-community.version>
+        <quarkus.version>3.8.4</quarkus.version><!-- https://repo1.maven.org/maven2/io/quarkus/quarkus-bom/ -->
+        <quarkus-community.version>3.8.4</quarkus-community.version>
         <quarkus-hazelcast-client.version>4.0.0</quarkus-hazelcast-client.version><!-- https://repo1.maven.org/maven2/com/hazelcast/quarkus-hazelcast-client-bom/ -->
         <quarkus-qpid-jms.version>2.6.1</quarkus-qpid-jms.version><!-- This should be in sync with quarkus-platform https://repo1.maven.org/maven2/org/amqphub/quarkus/quarkus-qpid-jms-bom/ -->
 
@@ -88,6 +88,7 @@
         <azure-core-http-vertx.version>1.0.0-beta.3</azure-core-http-vertx.version> <!-- TODO: https://github.com/apache/camel-quarkus/issues/4181 -->
         <cassandra-driver-test.version>3.7.1</cassandra-driver-test.version><!-- Keep in sync with testcontainers instead of Debezium bom -->
         <bouncycastle.version>1.77</bouncycastle.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:org.bouncycastle:bcprov-jdk18on -->
+        <bouncycastle-community.version>1.77</bouncycastle-community.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:org.bouncycastle:bcprov-jdk18on -->
         <brotli.version>0.1.2</brotli.version><!-- @sync org.apache.httpcomponents.client5:httpclient5-parent:${httpclient5.version} prop:brotli.version -->
         <caffeine.version>3.1.5</caffeine.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:com.github.ben-manes.caffeine:caffeine -->
         <commons-beanutils.version>${commons-beanutils-version}</commons-beanutils.version>
@@ -121,6 +122,7 @@
         <influxdb.version>${influx-java-driver-version}</influxdb.version>
         <jackson.version>2.16.1</jackson.version><!-- @sync io.quarkus:quarkus-bom:${quarkus.version} dep:com.fasterxml.jackson.core:jackson-core -->
         <jakarta.jms-api.version>${jakarta-jms-api-version}</jakarta.jms-api.version>
+        <jasypt.version>${jasypt-version}</jasypt.version><!-- Remove once we are on Quarkus CXF 3.8.4 where jasypt is managed -->
         <java-json-tools.json-patch.version>${json-patch-version}</java-json-tools.json-patch.version><!-- A replacement for com.github.fge:json-patch -->
         <jodatime.version>${jodatime2-version}</jodatime.version><!-- Mess in transitive dependencies of Splunk -->
         <jolokia.version>1.7.2</jolokia.version><!-- For camel-k -->
@@ -184,7 +186,7 @@
         <maven-utils.version>0.1.0</maven-utils.version>
 
         <!-- Maven plugin versions (keep sorted alphabetically) -->
-        <cq-plugin.version>4.6.6</cq-plugin.version>
+        <cq-plugin.version>4.6.8</cq-plugin.version>
         <cyclonedx-maven-plugin-version>2.7.11</cyclonedx-maven-plugin-version>
         <build-helper-maven-plugin.version>3.5.0</build-helper-maven-plugin.version>
         <exec-maven-plugin.version>3.1.1</exec-maven-plugin.version>
@@ -541,6 +543,7 @@
                             <exclude>**/*.conf</exclude>
                             <exclude>**/*.csv</exclude>
                             <exclude>**/*.der</exclude>
+                            <exclude>**/*.ext</exclude>
                             <exclude>**/*.ftl</exclude>
                             <exclude>**/*.graphql</exclude>
                             <exclude>**/*.ics</exclude>
@@ -557,6 +560,7 @@
                             <exclude>**/*.mp4</exclude>
                             <exclude>**/*.mvel</exclude>
                             <exclude>**/*.p12</exclude>
+                            <exclude>**/*.pkcs12</exclude>
                             <exclude>**/*.pem</exclude>
                             <exclude>**/*.pgp</exclude>
                             <exclude>**/*.proto</exclude>

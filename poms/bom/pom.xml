@@ -157,6 +157,10 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -875,6 +879,10 @@
                 <version>${camel-community.version}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -958,6 +966,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
@@ -1071,6 +1083,10 @@
                         <artifactId>annotations</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
@@ -1090,6 +1106,10 @@
                 <version>${camel-community.version}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
@@ -1104,6 +1124,10 @@
                 <artifactId>camel-google-drive</artifactId>
                 <version>${camel-community.version}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
@@ -1124,6 +1148,10 @@
                         <artifactId>annotations</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
@@ -1142,6 +1170,10 @@
                 <artifactId>camel-google-mail</artifactId>
                 <version>${camel-community.version}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
@@ -1193,6 +1225,10 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
@@ -1212,6 +1248,10 @@
                 <version>${camel-community.version}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
@@ -1229,6 +1269,10 @@
                     <exclusion>
                         <groupId>com.google.android</groupId>
                         <artifactId>annotations</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
@@ -1285,6 +1329,10 @@
                         <artifactId>auto-value-annotations</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
                     </exclusion>
@@ -1312,6 +1360,10 @@
                 <artifactId>camel-guava-eventbus</artifactId>
                 <version>${camel-community.version}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
@@ -1417,6 +1469,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
@@ -1531,6 +1587,10 @@
                 <artifactId>camel-jira</artifactId>
                 <version>${camel.version}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
@@ -1762,6 +1822,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
@@ -2003,6 +2067,10 @@
                         <artifactId>json-patch</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -2099,6 +2167,10 @@
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
@@ -2114,6 +2186,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>com.sun.activation</groupId>
@@ -2208,6 +2284,10 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -2240,6 +2320,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
@@ -2632,6 +2716,10 @@
                 <version>${camel-community.version}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -2748,6 +2836,10 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -2761,6 +2853,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
@@ -4979,6 +5075,12 @@
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-protobuf-deployment</artifactId>
                 <version>${camel-quarkus-community.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
@@ -5529,6 +5631,12 @@
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-support-google-cloud</artifactId>
                 <version>${camel-quarkus.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
@@ -5539,6 +5647,12 @@
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-support-google-http-client</artifactId>
                 <version>${camel-quarkus.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
@@ -6117,6 +6231,10 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -6247,6 +6365,10 @@
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
@@ -6261,6 +6383,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>commons-logging</groupId>
@@ -6281,6 +6407,10 @@
                 <artifactId>google-oauth-client</artifactId>
                 <version>${google-oauth-client.version}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
@@ -6420,6 +6550,10 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -6429,12 +6563,22 @@
                 <groupId>io.opencensus</groupId>
                 <artifactId>opencensus-api</artifactId>
                 <version>${opencensus.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>io.opencensus</groupId>
                 <artifactId>opencensus-contrib-http-util</artifactId>
                 <version>${opencensus.version}</version>
                 <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
@@ -6597,6 +6741,10 @@
                         <artifactId>jsr305</artifactId>
                     </exclusion>
                     <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>org.checkerframework</groupId>
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
@@ -6680,6 +6828,11 @@
             <dependency>
                 <groupId>org.apache.httpcomponents.core5</groupId>
                 <artifactId>httpcore5</artifactId>
+                <version>${httpclient5.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents.core5</groupId>
+                <artifactId>httpcore5-h2</artifactId>
                 <version>${httpclient5.version}</version>
             </dependency>
             <dependency>
@@ -6790,7 +6943,7 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcmail-jdk18on</artifactId>
-                <version>${bouncycastle.version}</version>
+                <version>${bouncycastle-community.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
@@ -6800,7 +6953,7 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-ext-jdk18on</artifactId>
-                <version>${bouncycastle.version}</version>
+                <version>${bouncycastle-community.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
@@ -6831,6 +6984,11 @@
                 <groupId>org.influxdb</groupId>
                 <artifactId>influxdb-java</artifactId>
                 <version>${influxdb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jasypt</groupId>
+                <artifactId>jasypt</artifactId>
+                <version>${jasypt.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.javassist</groupId>
@@ -6875,6 +7033,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.checkerframework</groupId>
@@ -7252,6 +7414,14 @@
                                 <autogeneratedBomEntryTransformation>
                                     <gavPattern>software.amazon.awssdk:apache-client</gavPattern>
                                     <addExclusions>commons-logging:commons-logging</addExclusions>
+                                </autogeneratedBomEntryTransformation>
+                                <autogeneratedBomEntryTransformation>
+                                    <gavPattern>io.quarkiverse.cxf:quarkus-cxf-integration-tracing-opentelemetry</gavPattern>
+                                    <addExclusions>com.google.guava:listenablefuture</addExclusions>
+                                </autogeneratedBomEntryTransformation>
+                                <autogeneratedBomEntryTransformation>
+                                    <gavPattern>io.quarkiverse.cxf:quarkus-cxf-integration-tracing-opentelemetry-deployment</gavPattern>
+                                    <addExclusions>com.google.guava:listenablefuture</addExclusions>
                                 </autogeneratedBomEntryTransformation>
                             </autogeneratedBomEntryTransformations>
                         </configuration>

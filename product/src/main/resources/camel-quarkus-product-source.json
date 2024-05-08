@@ -278,9 +278,9 @@
             "comment": "supported/tp since CEQ 2.2.0, supported since CEQ 2.7.1; still need to productize com.jayway.jsonpath:json-path and net.minidev:* - see https://issues.redhat.com/browse/ENTESB-18809"
         },
         "camel-quarkus-jt400": {
-            "jvm": "techPreview",
-            "native": "techPreview",
-            "comment": "TP since CEQ 3.8.0"
+            "jvm": "supported",
+            "native": "supported",
+            "comment": "supported since CEQ 3.8.0"
         },
         "camel-quarkus-jta": {
             "jvm": "supported",
@@ -639,6 +639,7 @@
         "com.aayushatharva.brotli4j:native-osx-aarch64": "com.aayushatharva.brotli4j:native-linux-x86_64"
     },
     "ignoredTransitiveDependencies": [
-        "net.openhft:affinity"
+        "net.openhft:affinity",
+        "io.quarkus:quarkus-test-common"
     ]
 }

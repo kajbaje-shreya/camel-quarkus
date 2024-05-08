@@ -99,6 +99,7 @@ com.google.cloud:google-cloud-core-grpc
 com.google.cloud:google-cloud-functions
 com.google.cloud:google-cloud-secretmanager
 com.google.cloud:google-cloud-storage
+com.google.guava:listenablefuture
 com.google.http-client:google-http-client-jackson2
 com.google.maps:google-maps-services
 com.google.oauth-client:google-oauth-client-java6
@@ -157,6 +158,7 @@ com.univocity:univocity-parsers
 com.x5dev:chunk-templates
 com.zaxxer:SparseBitSet
 com.zendesk:mysql-binlog-connector-java
+commons-cli:commons-cli
 commons-dbcp:commons-dbcp
 commons-fileupload:commons-fileupload
 commons-lang:commons-lang
@@ -178,6 +180,7 @@ io.debezium:debezium-embedded
 io.debezium:debezium-storage-file
 io.debezium:debezium-storage-kafka
 io.dropwizard.metrics:dropwizard-core
+io.dropwizard.metrics:metrics-core
 io.dropwizard.metrics:metrics-jmx
 io.etcd:jetcd-api
 io.etcd:jetcd-common
@@ -258,6 +261,7 @@ io.smallrye.reactive:smallrye-reactive-messaging-health
 io.smallrye.reactive:smallrye-reactive-messaging-provider
 io.vavr:vavr
 io.vavr:vavr-match
+javax.inject:javax.inject
 javax.jcr:jcr
 jaxen:jaxen
 net.bytebuddy:byte-buddy-agent
@@ -1009,8 +1013,11 @@ org.asynchttpclient:async-http-client-netty-utils
 org.bitbucket.b_c:jose4j
 org.bouncycastle:bcmail-jdk18on
 org.bouncycastle:bcpg-jdk15on
+org.bouncycastle:bcpkix-jdk15on
 org.bouncycastle:bcprov-ext-jdk15on
 org.bouncycastle:bcprov-ext-jdk18on
+org.bouncycastle:bcprov-jdk15on
+org.bouncycastle:bcutil-jdk15on
 org.ccil.cowan.tagsoup:tagsoup
 org.codelibs:jhighlight
 org.cometd.java:cometd-java-api-server

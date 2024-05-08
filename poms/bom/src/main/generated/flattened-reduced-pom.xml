@@ -106,6 +106,10 @@
             <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -814,6 +818,10 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -897,6 +905,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -1010,6 +1022,10 @@
             <artifactId>annotations</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -1029,6 +1045,10 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -1043,6 +1063,10 @@
         <artifactId>camel-google-drive</artifactId>
         <version>4.4.0</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -1063,6 +1087,10 @@
             <artifactId>annotations</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -1081,6 +1109,10 @@
         <artifactId>camel-google-mail</artifactId>
         <version>4.4.0</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -1132,6 +1164,10 @@
             <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -1151,6 +1187,10 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -1168,6 +1208,10 @@
           <exclusion>
             <groupId>com.google.android</groupId>
             <artifactId>annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -1224,6 +1268,10 @@
             <artifactId>auto-value-annotations</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -1251,6 +1299,10 @@
         <artifactId>camel-guava-eventbus</artifactId>
         <version>4.4.0</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
@@ -1356,6 +1408,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -1470,6 +1526,10 @@
         <artifactId>camel-jira</artifactId>
         <version>4.4.0.redhat-00002</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -1701,6 +1761,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -1942,6 +2006,10 @@
             <artifactId>json-patch</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -2038,6 +2106,10 @@
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -2053,6 +2125,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>com.sun.activation</groupId>
@@ -2147,6 +2223,10 @@
             <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -2179,6 +2259,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -2571,6 +2655,10 @@
         <version>4.4.0</version>
         <exclusions>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -2687,6 +2775,10 @@
             <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -2700,6 +2792,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -4906,6 +5002,12 @@
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-protobuf-deployment</artifactId>
         <version>3.8.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5456,6 +5558,12 @@
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-google-cloud</artifactId>
         <version>3.8.0.fuse-SNAPSHOT</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -5466,6 +5574,12 @@
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-support-google-http-client</artifactId>
         <version>3.8.0.fuse-SNAPSHOT</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel.quarkus</groupId>
@@ -6042,6 +6156,10 @@
             <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -6171,6 +6289,10 @@
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -6185,6 +6307,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -6205,6 +6331,10 @@
         <artifactId>google-oauth-client</artifactId>
         <version>1.35.0</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -6314,6 +6444,10 @@
             <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -6323,12 +6457,22 @@
         <groupId>io.opencensus</groupId>
         <artifactId>opencensus-api</artifactId>
         <version>0.31.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>io.opencensus</groupId>
         <artifactId>opencensus-contrib-http-util</artifactId>
         <version>0.31.0</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
@@ -6481,6 +6625,10 @@
             <artifactId>jsr305</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
           </exclusion>
@@ -6529,6 +6677,11 @@
       <dependency>
         <groupId>org.apache.httpcomponents.core5</groupId>
         <artifactId>httpcore5</artifactId>
+        <version>5.2.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents.core5</groupId>
+        <artifactId>httpcore5-h2</artifactId>
         <version>5.2.1</version>
       </dependency>
       <dependency>
@@ -6677,6 +6830,11 @@
         <version>2.24</version>
       </dependency>
       <dependency>
+        <groupId>org.jasypt</groupId>
+        <artifactId>jasypt</artifactId>
+        <version>1.9.3.redhat-00003</version>
+      </dependency>
+      <dependency>
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
         <version>3.30.2-GA</version>
@@ -6699,6 +6857,10 @@
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.checkerframework</groupId>
@@ -6943,7 +7105,7 @@
       <dependency>
         <groupId>org.fusesource</groupId>
         <artifactId>camel-sap</artifactId>
-        <version>4.4.0.redhat-00002</version>
+        <version>4.4.0.redhat-00008</version>
         <exclusions>
           <exclusion>
             <groupId>org.eclipse</groupId>
@@ -7077,138 +7239,148 @@
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-axiom-api-stub</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-integration-tracing-opentelemetry</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-integration-tracing-opentelemetry-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-features-logging</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-features-logging-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-features-metrics</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-features-metrics-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-transports-http-hc5</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-transports-http-hc5-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-ws-security</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-ws-security-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-bc-stub</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-ws-rm</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-rt-ws-rm-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-saaj</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-saaj-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-santuario-xmlsec</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-santuario-xmlsec-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-services-sts</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-services-sts-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-woodstox</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-woodstox-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-xjc-plugins</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>io.quarkiverse.cxf</groupId>
         <artifactId>quarkus-cxf-xjc-plugins-deployment</artifactId>
-        <version>3.8.2</version>
+        <version>3.8.3</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.woodstox</groupId>
@@ -7255,6 +7427,12 @@
         <groupId>org.apache.wss4j</groupId>
         <artifactId>wss4j-ws-security-common</artifactId>
         <version>3.0.3</version>
+        <exclusions>
+          <exclusion>
+            <groupId>io.dropwizard.metrics</groupId>
+            <artifactId>metrics-core</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.wss4j</groupId>
