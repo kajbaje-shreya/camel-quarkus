@@ -313,8 +313,24 @@
                 <version>${camel.version}</version>
                 <exclusions>
                     <exclusion>
+                        <groupId>com.google.code.findbugs</groupId>
+                        <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
+                    </exclusion>
+                    <exclusion>
                         <groupId>commons-logging</groupId>
                         <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.validation</groupId>
+                        <artifactId>validation-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.checkerframework</groupId>
+                        <artifactId>checker-qual</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
@@ -2333,6 +2349,10 @@
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>animal-sniffer-annotations</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
@@ -2432,6 +2452,12 @@
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-soap</artifactId>
                 <version>${camel.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel</groupId>
@@ -2530,6 +2556,12 @@
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-swift</artifactId>
                 <version>${camel-community.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel</groupId>
@@ -6308,6 +6340,12 @@
                 <groupId>ca.uhn.hapi.fhir</groupId>
                 <artifactId>org.hl7.fhir.r5</artifactId>
                 <version>${hapi-fhir-core.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.github.stephenc.jcip</groupId>
+                        <artifactId>jcip-annotations</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi.fhir</groupId>
@@ -6345,6 +6383,11 @@
                 <groupId>com.github.jnr</groupId>
                 <artifactId>jnr-ffi</artifactId>
                 <version>${jnr-ffi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.luben</groupId>
+                <artifactId>zstd-jni</artifactId>
+                <version>${zstd-jni.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.mwiede</groupId>
@@ -6420,6 +6463,11 @@
                         <artifactId>checker-qual</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.google.re2j</groupId>
+                <artifactId>re2j</artifactId>
+                <version>${re2j.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.ibm.icu</groupId>
@@ -6500,6 +6548,21 @@
                 <version>${okio.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio-fakefilesystem</artifactId>
+                <version>${okio.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio-fakefilesystem-jvm</artifactId>
+                <version>${okio.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio-jvm</artifactId>
+                <version>${okio.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.squareup.retrofit2</groupId>
                 <artifactId>converter-jackson</artifactId>
                 <version>${retrofit.version}</version>
@@ -6526,9 +6589,19 @@
                 <version>${commons-cli.version}</version>
             </dependency>
             <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons-collections.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
                 <version>${commons-lang.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${commons-validator.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.dropwizard.metrics</groupId>
@@ -6608,6 +6681,11 @@
             <dependency>
                 <groupId>io.quarkiverse.artemis</groupId>
                 <artifactId>quarkus-artemis-jms-deployment</artifactId>
+                <version>${quarkiverse-artemis.version}</version>
+            </dependency>
+            <dependency><!-- https://issues.redhat.com/browse/CEQ-9743 -->
+                <groupId>io.quarkiverse.artemis</groupId>
+                <artifactId>quarkus-test-artemis</artifactId>
                 <version>${quarkiverse-artemis.version}</version>
             </dependency>
             <dependency>
@@ -6722,9 +6800,19 @@
                 <version>${quarkiverse-tika.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.reactivex.rxjava3</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>${rxjava3.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.smallrye.reactive</groupId>
                 <artifactId>smallrye-reactive-messaging-camel</artifactId>
                 <version>${smallrye.reactive.messaging.camel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.smallrye.reactive</groupId>
+                <artifactId>mutiny-zero</artifactId>
+                <version>${mutiny-zero.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
@@ -6953,7 +7041,8 @@
             <dependency>
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-ext-jdk18on</artifactId>
-                <version>${bouncycastle-community.version}</version>
+                <!-- TODO: Revert back to bouncycastle.version when a release is available -->
+                <version>${bcprov-ext-jdk18on.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
@@ -6996,8 +7085,23 @@
                 <version>${javassist.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${org.json.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-script-util</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-scripting-compiler-embeddable</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-scripting-compiler-impl-embeddable</artifactId>
                 <version>${kotlin.version}</version>
             </dependency>
             <dependency>
@@ -7009,6 +7113,11 @@
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-scripting-jvm-host</artifactId>
                 <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlinx</groupId>
+                <artifactId>kotlinx-serialization-core-jvm</artifactId>
+                <version>${kotlinx.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jolokia</groupId>
@@ -7024,6 +7133,21 @@
                         <artifactId>json-simple</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.jxmpp</groupId>
+                <artifactId>jxmpp-core</artifactId>
+                <version>${jxmpp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jxmpp</groupId>
+                <artifactId>jxmpp-jid</artifactId>
+                <version>${jxmpp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jxmpp</groupId>
+                <artifactId>jxmpp-util-cache</artifactId>
+                <version>${jxmpp.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.kiwiproject</groupId>

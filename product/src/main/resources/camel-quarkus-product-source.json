@@ -572,7 +572,7 @@
             "native": "supported",
             "comment": "supported since CEQ 2.13.1",
             "allowedMixedTests": [
-                "camel-quarkus-integration-test-xml"
+                "camel-quarkus-integration-test-xslt-classpath"
             ]
         },
         "camel-quarkus-xslt-saxon": {
@@ -600,6 +600,9 @@
         }
     },
     "additionalProductizedArtifacts": [
+        "io.quarkiverse.artemis:quarkus-artemis-jms",
+        "io.quarkiverse.artemis:quarkus-test-artemis",
+        "io.quarkiverse.messaginghub:quarkus-pooled-jms",
         "org.apache.camel.quarkus:camel-quarkus-catalog",
         "org.apache.camel.quarkus:camel-quarkus-integration-tests-support-activemq",
         "org.apache.camel.quarkus:camel-quarkus-integration-test-messaging-common",
@@ -619,12 +622,14 @@
         {
             "includes": [
                 "integration-tests/*/pom.xml",
-                "integration-test-groups/*/*/pom.xml",
+                "integration-test-groups/*/**/pom.xml",
                 "integration-tests-jvm/*/pom.xml"
             ],
             "excludes": [
                 "integration-tests/messaging/pom.xml",
-                "integration-tests/*-grouped/pom.xml"
+                "integration-tests/*-grouped/pom.xml",
+                "integration-test-groups/*/pom.xml",
+                "integration-tests-jvm/*-grouped/pom.xml"
             ]
         }
     ],
@@ -632,7 +637,7 @@
     "requiredProductizedCamelArtifacts": "product/src/main/generated/required-productized-camel-artifacts.txt",
     "productizedCamelQuarkusArtifacts": "product/src/main/generated/productized-camel-quarkus-artifacts.txt",
     "additionalExtensionDependencies": {
-        "camel-quarkus-jms": "io.quarkiverse.artemis:quarkus-artemis-jms, io.quarkiverse.messaginghub:quarkus-pooled-jms",
+        "camel-quarkus-mapstruct" : "org.mapstruct:mapstruct-processor",
         "camel-quarkus-kudu": "org.apache.kudu:kudu-client"
     },
     "transitiveDependencyReplacements": {

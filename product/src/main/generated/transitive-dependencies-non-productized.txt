@@ -17,13 +17,11 @@ com.adobe.xmp:xmpcore
 com.alibaba:fastjson
 com.alibaba.fastjson2:fastjson2
 com.alibaba.fastjson2:fastjson2-extension
-com.amazonaws:aws-java-sdk-core
 com.amazonaws:aws-java-sdk-xray
 com.amazonaws:aws-xray-recorder-sdk-apache-http
 com.amazonaws:aws-xray-recorder-sdk-aws-sdk
 com.amazonaws:aws-xray-recorder-sdk-aws-sdk-core
 com.amazonaws:aws-xray-recorder-sdk-core
-com.amazonaws:jmespath-java
 com.apptasticsoftware:rssreader
 com.arangodb:arangodb-java-driver
 com.arangodb:core
@@ -44,7 +42,6 @@ com.cedarsoftware:java-util
 com.cloudbees.thirdparty:zendesk-java-client
 com.couchbase.client:core-io
 com.couchbase.client:java-client
-com.damnhandy:handy-uri-templates
 com.dashjoin:jsonata
 com.datasonnet:datasonnet-mapper
 com.drewnoakes:metadata-extractor
@@ -58,12 +55,10 @@ com.esotericsoftware.kryo:kryo
 com.esotericsoftware.minlog:minlog
 com.ethlo.time:itu
 com.fasterxml:aalto-xml
-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor
 com.fasterxml.jackson.dataformat:jackson-dataformat-csv
 com.fasterxml.jackson.dataformat:jackson-dataformat-properties
 com.fasterxml.jackson.datatype:jackson-datatype-guava
 com.fasterxml.jackson.jr:jackson-jr-objects
-com.fasterxml.jackson.module:jackson-module-afterburner
 com.fasterxml.jackson.module:jackson-module-kotlin
 com.github.albfernandez:juniversalchardet
 com.github.beanio:beanio
@@ -99,7 +94,6 @@ com.google.cloud:google-cloud-core-grpc
 com.google.cloud:google-cloud-functions
 com.google.cloud:google-cloud-secretmanager
 com.google.cloud:google-cloud-storage
-com.google.guava:listenablefuture
 com.google.http-client:google-http-client-jackson2
 com.google.maps:google-maps-services
 com.google.oauth-client:google-oauth-client-java6
@@ -186,7 +180,6 @@ io.etcd:jetcd-api
 io.etcd:jetcd-common
 io.etcd:jetcd-core
 io.etcd:jetcd-grpc
-io.github.classgraph:classgraph
 io.github.resilience4j:resilience4j-core
 io.github.resilience4j:resilience4j-ratelimiter
 io.github.resilience4j:resilience4j-retry
@@ -261,6 +254,7 @@ io.smallrye.reactive:smallrye-reactive-messaging-health
 io.smallrye.reactive:smallrye-reactive-messaging-provider
 io.vavr:vavr
 io.vavr:vavr-match
+javax.cache:cache-api
 javax.inject:javax.inject
 javax.jcr:jcr
 jaxen:jaxen
@@ -851,7 +845,6 @@ org.apache.camel.quarkus:camel-quarkus-zookeeper
 org.apache.camel.quarkus:camel-quarkus-zookeeper-deployment
 org.apache.camel.quarkus:camel-quarkus-zookeeper-master
 org.apache.camel.quarkus:camel-quarkus-zookeeper-master-deployment
-org.apache.commons:commons-collections4
 org.apache.commons:commons-csv
 org.apache.commons:commons-exec
 org.apache.commons:commons-math3
@@ -1080,11 +1073,8 @@ org.fusesource.hawtdispatch:hawtdispatch
 org.fusesource.hawtdispatch:hawtdispatch-transport
 org.fusesource.leveldbjni:leveldbjni-all
 org.fusesource.stompjms:stompjms-client
-org.graalvm.js:js
 org.graalvm.js:js-language
 org.graalvm.js:js-scriptengine
-org.graalvm.regex:regex
-org.graalvm.truffle:truffle-api
 org.igniterealtime.smack:smack-core
 org.igniterealtime.smack:smack-extensions
 org.igniterealtime.smack:smack-im
@@ -1103,18 +1093,9 @@ org.jetbrains.intellij.deps:trove4j
 org.jetbrains.kotlin:kotlin-compiler
 org.jetbrains.kotlin:kotlin-compiler-embeddable
 org.jetbrains.kotlin:kotlin-daemon-embeddable
-org.jetbrains.kotlin:kotlin-reflect
-org.jetbrains.kotlin:kotlin-script-runtime
-org.jetbrains.kotlin:kotlin-script-util
-org.jetbrains.kotlin:kotlin-scripting-common
-org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable
-org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable
-org.jetbrains.kotlin:kotlin-scripting-jvm
 org.jetbrains.kotlin:kotlin-scripting-jvm-host
 org.jetbrains.kotlinx:kotlinx-coroutines-core
-org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm
 org.jetbrains.kotlinx:kotlinx-coroutines-jdk8
-org.jgroups:jgroups
 org.jgroups:jgroups-raft
 org.jodd:jodd-bean
 org.jodd:jodd-core
@@ -1136,7 +1117,6 @@ org.kiwiproject:consul-client
 org.knowm.xchange:xchange-binance
 org.knowm.xchange:xchange-core
 org.lightcouch:lightcouch
-org.mapstruct:mapstruct-processor
 org.mariadb.jdbc:mariadb-java-client
 org.minidns:minidns-core
 org.mnode.ical4j:ical4j
@@ -1174,7 +1154,6 @@ org.quickfixj:quickfixj-messages-all
 org.redisson:redisson
 org.reflections:reflections
 org.robotframework:robotframework
-org.scala-lang:scala-library
 org.scala-lang.modules:scala-collection-compat_2.13
 org.schwering:irclib
 org.slf4j:jul-to-slf4j
@@ -1221,7 +1200,6 @@ software.amazon.awssdk:kms
 software.amazon.awssdk:mq
 software.amazon.awssdk:secretsmanager
 software.amazon.awssdk:ses
-software.amazon.awssdk:sts
 software.amazon.awssdk:translate
 software.amazon.ion:ion-java
 uk.co.jemos.podam:podam

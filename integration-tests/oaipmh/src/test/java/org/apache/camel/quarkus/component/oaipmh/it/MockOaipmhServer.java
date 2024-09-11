@@ -33,6 +33,7 @@ import com.github.tomakehurst.wiremock.extension.ResponseDefinitionTransformer;
 import com.github.tomakehurst.wiremock.http.Request;
 import com.github.tomakehurst.wiremock.http.ResponseDefinition;
 import org.apache.camel.quarkus.test.AvailablePortFinder;
+import org.apache.camel.quarkus.test.support.certificate.CertificatesUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -42,7 +43,7 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMoc
 public final class MockOaipmhServer {
 
     private static Map<String, String> responseCache;
-    private static final String PASSWORD = "changeit";
+    static final String PASSWORD = "changeit";
 
     private int httpPort;
     private int httpsPort;
@@ -91,8 +92,7 @@ public final class MockOaipmhServer {
         WireMockConfiguration config = wireMockConfig().extensions(transformer);
 
         config.httpsPort(httpsPort);
-        String keyStorePath = MockOaipmhServer.class.getResource("/jettyKS/localhost.p12").toExternalForm();
-        config.keystorePath(keyStorePath);
+        config.keystorePath(CertificatesUtil.keystoreFile("oaipmh", "p12"));
         config.keystorePassword(PASSWORD);
         config.keyManagerPassword(PASSWORD);
 

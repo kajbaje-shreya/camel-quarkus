@@ -70,15 +70,15 @@
                 <scope>import</scope>
             </dependency>
 
-           <dependency>
-                <groupId>io.quarkiverse.artemis</groupId>
-                <artifactId>quarkus-test-artemis</artifactId>
-                <version>${quarkiverse-artemis.version}</version>
-            </dependency>
             <dependency>
                 <groupId>io.quarkiverse.micrometer.registry</groupId>
                 <artifactId>quarkus-micrometer-registry-jmx</artifactId>
                 <version>${quarkiverse-micrometer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>me.escoffier.certs</groupId>
+                <artifactId>certificate-generator-junit5</artifactId>
+                <version>${certificate.generator.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
@@ -160,6 +160,11 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
+                <artifactId>camel-quarkus-integration-tests-support-certificate-generator</artifactId>
+                <version>${camel-quarkus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-integration-tests-support-kafka</artifactId>
                 <version>${camel-quarkus.version}</version>
             </dependency>
@@ -232,7 +237,7 @@
             <dependency>
                 <groupId>org.apache.camel.quarkus</groupId>
                 <artifactId>camel-quarkus-integration-tests-support-xslt</artifactId>
-                <version>${camel-quarkus-community.version}</version>
+                <version>${camel-quarkus.version}</version>
             </dependency>
 
             <dependency>
@@ -391,6 +396,10 @@
                     <exclusion>
                         <groupId>com.google.code.findbugs</groupId>
                         <artifactId>jsr305</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>listenablefuture</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.apache.httpcomponents</groupId>

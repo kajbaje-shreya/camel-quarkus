@@ -20,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
+import org.apache.camel.quarkus.test.support.certificate.CertificatesUtil;
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +29,7 @@ import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.containers.SelinuxContext;
 import org.testcontainers.containers.output.Slf4jLogConsumer;
 import org.testcontainers.containers.wait.strategy.Wait;
+import org.testcontainers.utility.MountableFile;
 import org.testcontainers.utility.TestcontainersConfiguration;
 
 import static org.apache.camel.quarkus.component.nats.it.NatsConfiguration.NATS_BROKER_URL_BASIC_AUTH_CONFIG_KEY;
@@ -134,18 +136,17 @@ public class NatsTestResource implements QuarkusTestResourceLifecycleManager {
         GenericContainer<?> container = new GenericContainer<>(NATS_IMAGE)
                 .withExposedPorts(NATS_SERVER_PORT)
                 .withNetworkAliases("tlsAuthContainer")
-                .withClasspathResourceMapping("certs/ca.pem", "/certs/ca.pem", BindMode.READ_ONLY, SelinuxContext.SHARED)
-                .withClasspathResourceMapping("certs/key.pem", "/certs/key.pem", BindMode.READ_ONLY, SelinuxContext.SHARED)
-                .withClasspathResourceMapping("certs/server.pem", "/certs/server.pem", BindMode.READ_ONLY,
-                        SelinuxContext.SHARED)
+                .withCopyToContainer(MountableFile.forHostPath(CertificatesUtil.caCrt("nats")), "/certs/nats-ca.crt")
+                .withCopyToContainer(MountableFile.forHostPath(CertificatesUtil.key("nats")), "/certs/nats.key")
+                .withCopyToContainer(MountableFile.forHostPath(CertificatesUtil.crt("nats")), "/certs/nats.crt")
                 .withClasspathResourceMapping("conf/tls.conf", "/conf/tls.conf", BindMode.READ_ONLY, SelinuxContext.SHARED)
                 .withCommand(
                         "--config", "/conf/tls.conf",
                         "--tls",
-                        "--tlscert=/certs/server.pem",
-                        "--tlskey=/certs/key.pem",
+                        "--tlscert=/certs/nats.crt",
+                        "--tlskey=/certs/nats.key",
                         "--tlsverify",
-                        "--tlscacert=/certs/ca.pem")
+                        "--tlscacert=/certs/nats-ca.crt")
                 .withLogConsumer(new Slf4jLogConsumer(LOG).withPrefix("tlsAuthContainer"))
                 .waitingFor(Wait.forLogMessage(".*Server is ready.*", 1));
         try {

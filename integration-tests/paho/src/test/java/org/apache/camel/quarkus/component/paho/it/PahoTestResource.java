@@ -20,19 +20,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
+import org.apache.camel.quarkus.test.support.certificate.CertificatesUtil;
 import org.apache.camel.util.CollectionHelper;
-import org.eclipse.microprofile.config.ConfigProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testcontainers.containers.BindMode;
 import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.containers.output.Slf4jLogConsumer;
 import org.testcontainers.containers.wait.strategy.Wait;
+import org.testcontainers.utility.MountableFile;
 import org.testcontainers.utility.TestcontainersConfiguration;
 
 public class PahoTestResource implements QuarkusTestResourceLifecycleManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(PahoTestResource.class);
-    private static final String IMAGE = ConfigProvider.getConfig().getValue("eclipse-mosquitto.container.image", String.class);
+    //    private static final String IMAGE = ConfigProvider.getConfig().getValue("eclipse-mosquitto.container.image", String.class);
+    private static final String IMAGE = "docker.io/eclipse-mosquitto:2.0.18";
     private static final int TCP_PORT = 1883;
     private static final int SSL_PORT = 8883;
     private static final int WS_PORT = 9001;
@@ -51,10 +53,12 @@ public class PahoTestResource implements QuarkusTestResourceLifecycleManager {
             container = new GenericContainer<>(IMAGE).withExposedPorts(TCP_PORT, WS_PORT, SSL_PORT)
                     .withClasspathResourceMapping("mosquitto.conf", "/mosquitto/config/mosquitto.conf", BindMode.READ_ONLY)
                     .withClasspathResourceMapping("password.conf", "/etc/mosquitto/password", BindMode.READ_ONLY)
-                    .withClasspathResourceMapping("certs/ca.pem", "/etc/mosquitto/certs/ca.pem", BindMode.READ_ONLY)
-                    .withClasspathResourceMapping("certs/server.pem", "/etc/mosquitto/certs/server.pem", BindMode.READ_ONLY)
-                    .withClasspathResourceMapping("certs/server.key", "/etc/mosquitto/certs/server.key", BindMode.READ_ONLY);
-
+                    .withCopyToContainer(MountableFile.forHostPath(CertificatesUtil.caCrt("paho")),
+                            "/etc/mosquitto/certs/paho-ca.crt")
+                    .withCopyToContainer(MountableFile.forHostPath(CertificatesUtil.crt("paho")),
+                            "/etc/mosquitto/certs/paho.crt")
+                    .withCopyToContainer(MountableFile.forHostPath(CertificatesUtil.key("paho")),
+                            "/etc/mosquitto/certs/paho.key");
             container.withLogConsumer(new Slf4jLogConsumer(LOGGER))
                     .waitingFor(Wait.forLogMessage(".* mosquitto version .* running", 1)).waitingFor(Wait.forListeningPort());
 

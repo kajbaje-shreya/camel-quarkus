@@ -50,6 +50,7 @@
         <module>activemq</module>
         <module>aws2</module>
         <module>azure</module>
+        <module>certificate-generator</module>
         <!-- <module>custom-dataformat</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <!-- <module>custom-log-component</module> disabled by cq-prod-maven-plugin:prod-excludes -->
         <!-- <module>custom-routes-collector</module> disabled by cq-prod-maven-plugin:prod-excludes -->
@@ -66,7 +67,7 @@
         <module>test-support</module>
         <module>mock-backend</module>
         <module>wiremock</module>
-        <!-- <module>xslt-support</module> disabled by cq-prod-maven-plugin:prod-excludes -->
+        <module>xslt-support</module>
     </modules>
 
     <dependencyManagement>
