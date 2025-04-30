@@ -54,6 +54,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import java.io.Console;
+
 @QuarkusTest
 @QuarkusTestResource(AzureStorageTestResource.class)
 class AzureStorageBlobTest {
@@ -66,6 +68,9 @@ class AzureStorageBlobTest {
         String containerName = config.getValue("azure.blob.container.name", String.class);
         int port = config.getValue("quarkus.http.test-port", int.class);
         RestAssured.port = port;
+           
+        System.out.println("azure.blob.container.name "+containerName);
+        System.out.println("quarkus.http.test-port "+port);
         RestAssured.given()
                 .queryParam("containerName", containerName)
                 .post("/azure-storage-blob/blob/container")
